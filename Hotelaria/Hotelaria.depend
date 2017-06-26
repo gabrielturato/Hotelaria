@@ -34,42 +34,43 @@
 	<string>
 	<stdio.h>
 
-1498444938 source:c:\users\usuario\desktop\hotelaria\hotelaria\src\classes.cpp
+1498453182 source:c:\users\usuario\desktop\hotelaria\hotelaria\src\classes.cpp
 	"Classes.h"
 	<iostream>
 	<string>
 	<stdio.h>
 
-1498443975 c:\users\usuario\desktop\hotelaria\hotelaria\include\classes.h
+1498453067 c:\users\usuario\desktop\hotelaria\hotelaria\include\classes.h
 	<iostream>
 	<string>
 	<stdio.h>
 
-1498443592 source:c:\users\usuario\desktop\hotelaria\hotelaria\src\hotelaria.cpp
+1498464986 source:c:\users\usuario\desktop\hotelaria\hotelaria\src\hotelaria.cpp
 	"Hotelaria.h"
 	<string>
 	<iostream>
 	<stdio.h>
 
-1498437719 c:\users\usuario\desktop\hotelaria\hotelaria\include\hotelaria.h
+1498454944 c:\users\usuario\desktop\hotelaria\hotelaria\include\hotelaria.h
 	"Classes.h"
 	<string>
 	<iostream>
 	<stdio.h>
 
-1498444496 source:c:\users\usuario\desktop\hotelaria\hotelaria\main.cpp
+1498466694 source:c:\users\usuario\desktop\hotelaria\hotelaria\main.cpp
 	<string>
 	<iostream>
 	<stdio.h>
 	"Classes.h"
 	"Hotelaria.h"
+	<windows.h>
 
 1498437718 c:\users\usuario\desktop\hotelaria\hotelaria\classes.h
 	<iostream>
 	<string>
 	<stdio.h>
 
-1498437718 c:\users\usuario\desktop\hotelaria\hotelaria\hotelaria.h
+1498455128 c:\users\usuario\desktop\hotelaria\hotelaria\hotelaria.h
 	"Classes.h"
 	<string>
 	<iostream>

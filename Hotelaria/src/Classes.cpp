@@ -318,11 +318,16 @@ Estadia::~Estadia()
 
 void Estadia::setAcompanhante(string nome,string telefone)
 {
+<<<<<<< HEAD
 	int i;
 	for(i=0;i<quant_pessoas;i++){
 		pessoa.nome=nome;
 		pessoa.telefone=telefone;
 	}
+=======
+    pessoa.nome=nome;
+    pessoa.telefone=telefone;
+>>>>>>> a536265a3f7b61e0af06592d66c81dbf20655a39
 }
 
 dados_Acomp Estadia::getAcompanhante()

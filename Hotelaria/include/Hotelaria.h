@@ -24,7 +24,7 @@ class Hotelaria{
 		void cadastro_quarto(Quarto quarto);
 		void cadastro_func(Funcionario funcionario);
 		void cadastro_cli(Cliente cliente);
-		bool check_in(int nEstadia,string nome,int cod_cli,int dia,int mes,int ano,int num_quarto,string telefone,int quant_pessoas);
+		bool check_in(int nEstadia,string nome,int cod_cli,int dia,int mes,int ano,int num_quarto,string telefone);
 		Funcionario	consulta_func(int cod_func);
 		Quarto	consulta_quarto(int num_quarto);
 		Cliente consulta_cli(int cod_cli);
