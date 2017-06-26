@@ -1,0 +1,36 @@
+# depslib dependency file v1.0
+1498435607 source:c:\users\turato\documents\prog2\hotelaria\main.cpp
+	<string>
+	<iostream>
+	<stdio.h>
+	"Classes.h"
+	"Hotelaria.h"
+
+1498349528 c:\users\turato\documents\prog2\hotelaria\classes.h
+	<iostream>
+	<string>
+	<stdio.h>
+
+1498321596 c:\users\turato\documents\prog2\hotelaria\hotelaria.h
+	"Classes.h"
+	<string>
+	<iostream>
+	<stdio.h>
+
+1498435917 source:c:\users\turato\documents\prog2\hotelaria\src\hotelaria.cpp
+	"Hotelaria.h"
+	<string>
+	<iostream>
+	<stdio.h>
+
+1498435896 c:\users\turato\documents\prog2\hotelaria\include\hotelaria.h
+	"Classes.h"
+	<string>
+	<iostream>
+	<stdio.h>
+
+1498435959 c:\users\turato\documents\prog2\hotelaria\include\classes.h
+	<iostream>
+	<string>
+	<stdio.h>
+
