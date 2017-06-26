@@ -217,6 +217,16 @@ void Cliente::diminuiConta(float valor)
 	this->Conta-=valor;
 }
 
+void Cliente::setCodCli(int cod_cli)
+{
+	this->cod_cli=cod_cli;
+}
+
+int Cliente::getCodCli()
+{
+	return this->cod_cli;
+}
+
 Quarto::~Quarto()
 {
 }
@@ -305,35 +315,20 @@ Estadia::Estadia()
 Estadia::~Estadia()
 {
 }
-/*
-void Estadia::acompanhante(string nome,string telefone,int quantidade)
+
+void Estadia::setAcompanhante(string nome,string telefone)
 {
 	int i;
 	for(i=0;i<quant_pessoas;i++){
-		pessoas[i].nome=nome;
-		pessoas[i].telefone=telefone;
+		pessoa.nome=nome;
+		pessoa.telefone=telefone;
 	}
 }
 
-float Estadia::check_out(int cod_cli,string nome,int dia,int mes,int ano,int num_quarto,string observacao,string forma_pag)
+dados_Acomp Estadia::getAcompanhante()
 {
-	float valor_total;
-	int total_dias;
-	float valor_quarto;
-
-	if(this->cod_cli==cod_cli&&this->nome==nome)
-	{
-		saida.dia = dia;
-		saida.mes = mes;
-		saida.ano = ano;
-		total_dias = dist_dias(entrada,saida);
-		//valor_quarto = dados_Quarto(num_quarto);
-		valor_total = total_dias * valor_quarto;
-		return valor_total;
-	}else{
-		return 0.0;
-	}
-}*/
+    return this->pessoa;
+}
 
 void Estadia::setDataEntrada(int dia,int mes,int ano)
 {

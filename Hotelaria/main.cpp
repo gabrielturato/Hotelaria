@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include "Classes.h"
 #include "Hotelaria.h"
+#include "ClassesDAO.h"
 
 using namespace std;
 

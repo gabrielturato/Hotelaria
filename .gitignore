@@ -1,2 +1,9 @@
 
 Hotelaria/Hotelaria.layout
+*.cbp
+*.exe
+*.depend
+*.layout
+*.h
+*.cpp
+*.o

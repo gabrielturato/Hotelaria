@@ -111,10 +111,10 @@ float Hotelaria::check_out(int nEstadia,int cod_cli, string nome,int dia,int mes
 		return 0.0;	//ERRO Cliente inexistente
 	}
 }
-/*
-void Hotelaria::acompanhante(int nEstadia,string nome,string telefone,int quantidade){
-	vEstadia[nEstadia].acompanhante(nome,telefone,quantidade);
-}*/
+
+void Hotelaria::acompanhante(int nEstadia,string nome,string telefone){
+	vEstadia[nEstadia].setAcompanhante(nome,telefone);
+}
 
 string Hotelaria::recupera_senha(int cod_func,string CPF,string cargo){
 	string senha;

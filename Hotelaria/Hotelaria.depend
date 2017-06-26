@@ -75,3 +75,66 @@
 	<iostream>
 	<stdio.h>
 
+1498459369 source:c:\users\turato\documents\github\hotelaria\hotelaria\main.cpp
+	<string>
+	<iostream>
+	<stdio.h>
+	"Classes.h"
+	"Hotelaria.h"
+	"ClassesDAO.h"
+
+1498349528 c:\users\turato\documents\github\hotelaria\hotelaria\classes.h
+	<iostream>
+	<string>
+	<stdio.h>
+
+1498321596 c:\users\turato\documents\github\hotelaria\hotelaria\hotelaria.h
+	"Classes.h"
+	<string>
+	<iostream>
+	<stdio.h>
+
+1498458223 source:c:\users\turato\documents\github\hotelaria\hotelaria\src\classes.cpp
+	"Classes.h"
+	<iostream>
+	<string>
+	<stdio.h>
+
+1498458223 c:\users\turato\documents\github\hotelaria\hotelaria\include\classes.h
+	<iostream>
+	<string>
+	<stdio.h>
+
+1498459369 source:c:\users\turato\documents\github\hotelaria\hotelaria\src\hotelaria.cpp
+	"Hotelaria.h"
+	<string>
+	<iostream>
+	<stdio.h>
+
+1498451555 c:\users\turato\documents\github\hotelaria\hotelaria\include\hotelaria.h
+	"Classes.h"
+	<string>
+	<iostream>
+	<stdio.h>
+
+1498455295 source:c:\users\turato\documents\github\hotelaria\hotelaria\src\dao.cpp
+	"DAO.h"
+	<string>
+	<mysql.h>
+	<sstream>
+	<iostream>
+
+1498455288 c:\users\turato\documents\github\hotelaria\hotelaria\include\dao.h
+	<sstream>
+	<string>
+	<mysql.h>
+
+1498459218 source:c:\users\turato\documents\github\hotelaria\hotelaria\src\classesdao.cpp
+	"ClassesDAO.h"
+	"Classes.h"
+	"DAO.h"
+	<iostream>
+
+1498459697 c:\users\turato\documents\github\hotelaria\hotelaria\include\classesdao.h
+	"Classes.h"
+

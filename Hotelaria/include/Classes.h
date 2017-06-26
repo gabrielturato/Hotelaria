@@ -82,7 +82,8 @@ class Estadia
 	public:
 		Estadia();
 		~Estadia();
-		//void	acompanhante(string nome,string telefone,int quantidade);
+		void setAcompanhante(string nome,string telefone);
+		dados_Acomp getAcompanhante();
 		void setDataEntrada(int dia,int mes,int ano);
 		Data getDataEntrada();
 		void setDataSaida(int dia,int mes,int ano);
@@ -110,7 +111,7 @@ class Estadia
 		void setNumQuarto(int num_quarto);
 		int getNumQuarto();
 	protected:
-		dados_Acomp pessoas[10];
+		dados_Acomp pessoa;
 		int cod_cli;
 		int num_quarto;
 		string nome;
@@ -171,8 +172,11 @@ class Cliente : public Pessoa
 		void setConta(float valor);
 		float getConta();
 		void diminuiConta(float valor);
+		void setCodCli(int cod_cli);
+		int getCodCli();
 	protected:
 		float Conta;
+		int cod_cli;
 };
 #endif
 

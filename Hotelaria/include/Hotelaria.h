@@ -32,7 +32,7 @@ class Hotelaria{
 		float altera_quarto(int num_quarto,string tipo,string categoria);
 		void disponibilidade(int num_quarto);
 		float	check_out(int nEstadia,int cod_cli,string nome,int dia,int mes,int ano,int num_quarto,string observacao,string forma_pag);
-		//void	acompanhante(int nEstadia,string nome,string telefone,int quantidade);
+		void	acompanhante(int nEstadia,string nome,string telefone);
 		string	recupera_senha(int cod_func,string CPF,string cargo);
 		bool	login(int cod_func, string senha);
 		bool	altera_cargo(int cod_func,string cargo);

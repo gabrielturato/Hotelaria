@@ -34,10 +34,17 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Mainn.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="include/Classes.h" />
+		<Unit filename="include/ClassesDAO.h" />
+		<Unit filename="include/DAO.h" />
 		<Unit filename="include/Hotelaria.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Classes.cpp" />
+		<Unit filename="src/ClassesDAO.cpp" />
+		<Unit filename="src/DAO.cpp" />
 		<Unit filename="src/Hotelaria.cpp" />
 		<Extensions>
 			<code_completion />
