@@ -33,7 +33,7 @@ void Hotelaria::cadastro_quarto(Quarto quarto){
 	num_quarto++;
 }
 
-bool Hotelaria::check_in(int nEstadia,string nome,int cod_cli,int dia,int mes,int ano,int num_quarto,string telefone,int quant_pessoas){
+bool Hotelaria::check_in(int nEstadia,string nome,int cod_cli,int dia,int mes,int ano,int num_quarto,string telefone){
 	if(vCliente[cod_cli].getNome()==nome){
 		if(vQuarto[num_quarto].getDisponibilidade()==1){
 			vEstadia[nEstadia].setNome(nome);
@@ -41,7 +41,7 @@ bool Hotelaria::check_in(int nEstadia,string nome,int cod_cli,int dia,int mes,in
 			vEstadia[nEstadia].setDataEntrada(dia,mes,ano);
 			vEstadia[nEstadia].setNumQuarto(num_quarto);
 			vEstadia[nEstadia].setTelefone(telefone);
-			vEstadia[nEstadia].setQuantPessoas(quant_pessoas);
+			vQuarto[num_quarto].setDisponibilidade();
 			nEstadia++;
 			return 1;
 		}else{
@@ -111,10 +111,10 @@ float Hotelaria::check_out(int nEstadia,int cod_cli, string nome,int dia,int mes
 		return 0.0;	//ERRO Cliente inexistente
 	}
 }
-/*
-void Hotelaria::acompanhante(int nEstadia,string nome,string telefone,int quantidade){
-	vEstadia[nEstadia].acompanhante(nome,telefone,quantidade);
-}*/
+
+void Hotelaria::acompanhante(int nEstadia,string nome,string telefone){
+	vEstadia[nEstadia].setAcompanhante(nome,telefone);
+}
 
 string Hotelaria::recupera_senha(int cod_func,string CPF,string cargo){
 	string senha;
