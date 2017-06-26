@@ -53,6 +53,4 @@ class Hotelaria{
 		bool	altera_nome_cli(int cod_cli,string nome);
 };
 
-#endif
-
-
+#endif // HOTELARIA_H

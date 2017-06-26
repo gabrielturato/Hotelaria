@@ -3,11 +3,8 @@
 #include <stdio.h>
 #include "Classes.h"
 #include "Hotelaria.h"
-<<<<<<< HEAD
 #include "ClassesDAO.h"
-=======
 #include <windows.h>
->>>>>>> a536265a3f7b61e0af06592d66c81dbf20655a39
 
 using namespace std;
 
@@ -297,6 +294,10 @@ cout << "                                           " << endl;
                                     cout << "3-Carga horaria" << endl;
                                     cout << "4-Data Admissao" << endl;
                                     cout << "5-Telefone" << endl;
+                                    cout << "6-Nome" << endl;
+                                    cout << "7-RG" << endl;
+                                    cout << "8-CPF" << endl;
+                                    cout << "9-Endereço" << endl;
                                     cout << "0-Retornar" << endl;
                                     cout << "Escolha uma opcao: ";
                                     cin >> opcao;
@@ -304,46 +305,73 @@ cout << "                                           " << endl;
                                             case 1:
                                                 cout << "Digite o codigo do funcionario: ";
                                                 cin >> cod_func;
-                                                funcionario = hotel.consulta_func(cod_func);
                                                 cout << "Digite o novo cargo: ";
                                                 cin >> cargo;
-                                                funcionario.setCargo(cargo);
+                                                hotel.altera_cargo(cod_func,cargo);
                                                 system("pause");
                                                 break;
                                             case 2:
                                                 cout << "Digite o codigo do funcionario: ";
                                                 cin >> cod_func;
-                                                funcionario = hotel.consulta_func(cod_func);
                                                 cout << "Digite o novo salario: " ;
                                                 cin >> salario;
-                                                funcionario.setSalario(salario);
+                                                hotel.altera_salario(cod_func,salario);
                                                 system("pause");
                                                 break;
                                             case 3:
                                                 cout << "Digite o codigo do funcionario: ";
                                                 cin >> cod_func;
-                                                funcionario = hotel.consulta_func(cod_func);
                                                 cout << "Digite a nova carga horaria: " ;
                                                 cin >> carga_h;
-                                                funcionario.setCargaHoraria(carga_h);
+                                                hotel.altera_carga_horaria(cod_func,carga_h);
                                                 system("pause");
                                                 break;
                                             case 4:
                                                 cout << "Digite o codigo do funcionario: ";
                                                 cin >> cod_func;
-                                                funcionario = hotel.consulta_func(cod_func);
                                                 cout << "Digite a nova data de admissao: " ;
                                                 cin >> data_adm;
-                                                funcionario.setDataAdmissao(data_adm);
+                                                hotel.altera_data_admissao(cod_func,data_adm);
                                                 system("pause");
                                                 break;
                                             case 5:
                                                 cout << "Digite o codigo do funcionario: ";
                                                 cin >> cod_func;
-                                                funcionario = hotel.consulta_func(cod_func);
                                                 cout << "Digite o novo telefone: " ;
                                                 cin >> telefone;
-                                                funcionario.setTelefone(telefone);
+                                                hotel.altera_telefone(cod_func,telefone);
+                                                system("pause");
+                                                break;
+                                            case 6:
+                                                cout << "Digite o codigo do funcionario: ";
+                                                cin >> cod_func;
+                                                cout << "Digite o novo nome: " ;
+                                                cin >> nome_pessoa;
+                                                hotel.altera_nome_func(cod_func,nome_pessoa);
+                                                system("pause");
+                                                break;
+                                            case 7:
+                                                cout << "Digite o codigo do funcionario: ";
+                                                cin >> cod_func;
+                                                cout << "Digite o novo RG: " ;
+                                                cin >> rg;
+                                                hotel.altera_RG_func(cod_func,rg);
+                                                system("pause");
+                                                break;
+                                            case 8:
+                                                cout << "Digite o codigo do funcionario: ";
+                                                cin >> cod_func;
+                                                cout << "Digite o novo CPF: " ;
+                                                cin >> cpf;
+                                                hotel.altera_CPF_func(cod_func,cpf);
+                                                system("pause");
+                                                break;
+                                            case 9:
+                                                cout << "Digite o codigo do funcionario: ";
+                                                cin >> cod_func;
+                                                cout << "Digite o novo endereco: " ;
+                                                cin >> endereco;
+                                                hotel.altera_endereco_func(cod_func,endereco);
                                                 system("pause");
                                                 break;
                                        }
@@ -365,6 +393,11 @@ cout << "                                           " << endl;
                                 cout << "   Salario: " << funcionario.getSalario() << endl;
                                 cout << "   Data de admissao: " << funcionario.getDataAdmissao() << endl;
                                 cout << "   Telefone: " << funcionario.getTelefone() << endl;
+                                if(funcionario.getAtividade()==1){
+                                    cout << "   Status: Ativo" << endl;
+                                }else{
+                                    cout << "   Status: Desativado" << endl;
+                                }
                                 system("pause");
                                 break;
                          case 4:
@@ -372,16 +405,13 @@ cout << "                                           " << endl;
                             cout << "   FUNCIONARIOS -> DESATIVAR FUNCIONARIO" << endl << endl;
                             cout << "   Digite o codigo do funcionario: ";
                             cin >> cod_func;
-                            funcionario = hotel.consulta_func(cod_func);
-                            funcionario.setAtividade();
+                            hotel.desativa_func(cod_func);
                             cout << "   Funcionario desativado." << endl;
                             system("pause");
                             break;
                         }
-
 				}while(opcao2!=0);
-
-
+                break;
 			case 5:
 				do{
                     system("cls");
@@ -431,46 +461,41 @@ cout << "                                           " << endl;
                                         case 1:
                                             cout << "   Digite o codigo do cliente: ";
                                             cin >> cod_cliente;
-                                            cliente = hotel.consulta_cli(cod_cliente);
                                             cout << "   Digite o novo nome: ";
                                             cin >> nome_pessoa;
-                                            cliente.setNome(nome_pessoa);
+                                            hotel.altera_nome_cli(cod_cliente,nome_pessoa);
                                             system("pause");
                                             break;
                                         case 2:
                                             cout << "   Digite o codigo do cliente: ";
                                             cin >> cod_cliente;
-                                            cliente = hotel.consulta_cli(cod_cliente);
                                             cout << "   Digite o novo RG: " ;
                                             cin >> rg;
-                                            cliente.setRG(rg);
+                                            hotel.altera_RG_cli(cod_cliente,rg);
                                             system("pause");
                                             break;
                                         case 3:
                                             cout << "   Digite o codigo do cliente: ";
                                             cin >> cod_cliente;
-                                            cliente = hotel.consulta_cli(cod_cliente);
                                             cout << "   Digite o novo CPF: " ;
                                             cin >> cpf;
-                                            cliente.setCPF(cpf);
+                                            hotel.altera_CPF_cli(cod_cliente,cpf);
                                             system("pause");
                                             break;
                                         case 4:
                                             cout << "   Digite o codigo do cliente: ";
                                             cin >> cod_cliente;
-                                            cliente = hotel.consulta_cli(cod_cliente);
                                             cout << "   Digite a nova data de nascimento: " ;
                                             cin >> data_nasc;
-                                            cliente.setDataNasc(data_nasc);
+                                            hotel.altera_data_nasc_cli(cod_cliente,data_nasc);
                                             system("pause");
                                             break;
                                         case 5:
                                             cout << "   Digite o codigo do cliente: ";
                                             cin >> cod_cliente;
-                                            cliente = hotel.consulta_cli(cod_cliente);
                                             cout << "   Digite o novo endereco: " ;
                                             cin >> endereco;
-                                            cliente.setEndereco(endereco);
+                                            hotel.altera_endereco_cli(cod_cliente,endereco);
                                             system("pause");
                                             break;
                                     }
@@ -479,21 +504,22 @@ cout << "                                           " << endl;
                          case 3:
                             system("cls");
                             cout << "   CLIENTES -> CONSULTAR INFORMACOES" << endl << endl;
-                            cout << "   Digite o codigo do funcionario: ";
-                            cin >> cod_func;
+                            cout << "   Digite o codigo do cliente: ";
+                            cin >> cod_cliente;
                             cliente = hotel.consulta_cli(cod_cliente);
                                 cout << "   Nome: " << cliente.getNome() << endl;
                                 cout << "   RG: " << cliente.getRG() << endl;
                                 cout << "   CPF: " << cliente.getCPF() << endl;
                                 cout << "   Data de nascimento: " << cliente.getDataNasc() << endl;
                                 cout << "   Endereco: " << cliente.getEndereco() << endl;
+                                cout << "   Conta: " << cliente.getConta() << endl;
                                 system("pause");
                                 break;
 
 	}
 
 	}while(opcao2 != 0);
-
+break;
 
 	}
 }while(opcao3!=0);

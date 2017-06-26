@@ -76,43 +76,44 @@
 	<iostream>
 	<stdio.h>
 
-1498459369 source:c:\users\turato\documents\github\hotelaria\hotelaria\main.cpp
+1498471353 source:c:\users\turato\documents\github\hotelaria\hotelaria\main.cpp
 	<string>
 	<iostream>
 	<stdio.h>
 	"Classes.h"
 	"Hotelaria.h"
 	"ClassesDAO.h"
+	<windows.h>
 
 1498349528 c:\users\turato\documents\github\hotelaria\hotelaria\classes.h
 	<iostream>
 	<string>
 	<stdio.h>
 
-1498321596 c:\users\turato\documents\github\hotelaria\hotelaria\hotelaria.h
+1498468308 c:\users\turato\documents\github\hotelaria\hotelaria\hotelaria.h
 	"Classes.h"
 	<string>
 	<iostream>
 	<stdio.h>
 
-1498458223 source:c:\users\turato\documents\github\hotelaria\hotelaria\src\classes.cpp
+1498469410 source:c:\users\turato\documents\github\hotelaria\hotelaria\src\classes.cpp
 	"Classes.h"
 	<iostream>
 	<string>
 	<stdio.h>
 
-1498458223 c:\users\turato\documents\github\hotelaria\hotelaria\include\classes.h
+1498468308 c:\users\turato\documents\github\hotelaria\hotelaria\include\classes.h
 	<iostream>
 	<string>
 	<stdio.h>
 
-1498459369 source:c:\users\turato\documents\github\hotelaria\hotelaria\src\hotelaria.cpp
+1498468308 source:c:\users\turato\documents\github\hotelaria\hotelaria\src\hotelaria.cpp
 	"Hotelaria.h"
 	<string>
 	<iostream>
 	<stdio.h>
 
-1498451555 c:\users\turato\documents\github\hotelaria\hotelaria\include\hotelaria.h
+1498468724 c:\users\turato\documents\github\hotelaria\hotelaria\include\hotelaria.h
 	"Classes.h"
 	<string>
 	<iostream>

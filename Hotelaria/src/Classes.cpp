@@ -83,7 +83,7 @@ void Pessoa::setDataNasc(string data_nasc)
 
 string Pessoa::getDataNasc()
 {
-	return this->CPF;
+	return this->data_nasc;
 }
 
 void Pessoa::setEndereco(string endereco)
@@ -196,6 +196,7 @@ bool Funcionario::getAtividade()
 
 Cliente::Cliente()
 {
+    this->Conta=0.0;
 }
 
 Cliente::~Cliente()
@@ -318,16 +319,13 @@ Estadia::~Estadia()
 
 void Estadia::setAcompanhante(string nome,string telefone)
 {
-<<<<<<< HEAD
-	int i;
+    	int i;
 	for(i=0;i<quant_pessoas;i++){
 		pessoa.nome=nome;
 		pessoa.telefone=telefone;
 	}
-=======
     pessoa.nome=nome;
     pessoa.telefone=telefone;
->>>>>>> a536265a3f7b61e0af06592d66c81dbf20655a39
 }
 
 dados_Acomp Estadia::getAcompanhante()
