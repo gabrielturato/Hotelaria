@@ -269,8 +269,6 @@ float Quarto::defineValor(string tipo, string categoria)
 		}else{
 			if(tipo=="casal"){
 				valor+=150.00;
-			}else{
-				return valor;
 			}
 		}
 	}
@@ -280,13 +278,12 @@ float Quarto::defineValor(string tipo, string categoria)
 		if(categoria=="luxo"){
 			valor+=150.00;
 		}else{
-			if(categoria=="sweet dreams"){
+			if(categoria=="sweet_dreams"){
 				valor+=300.00;
-			}else{
-				return valor;
 			}
 		}
 	}
+	return valor;
 }
 
 void Quarto::setDisponibilidade()

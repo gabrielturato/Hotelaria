@@ -2,6 +2,7 @@
 #include <string>
 #include <stdio.h>
 
+
 using namespace std;
 
 #ifndef STRUCTS_H
@@ -17,6 +18,9 @@ typedef struct {
 	int mes;
 	int ano;
 } Data;
+
+int bissexto (int ano);
+unsigned long dist_dias (Data inicio, Data fim);
 
 #endif
 

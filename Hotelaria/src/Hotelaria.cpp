@@ -88,9 +88,16 @@ float Hotelaria::check_out(int nEstadia,int cod_cli, string nome,int dia,int mes
 			float valor;
 			string tipo;
 			string categoria;
+			unsigned long dias;
+			Data entrada;
+			Data saida;
 			tipo=vQuarto[num_quarto].getTipo();
 			categoria=vQuarto[num_quarto].getCategoria();
 			valor=vQuarto[num_quarto].defineValor(tipo,categoria);
+			entrada=vEstadia[nEstadia].getDataEntrada();
+			saida=vEstadia[nEstadia].getDataSaida();
+			dias=dist_dias(entrada,saida);
+			valor*=dias;
 			vCliente[cod_cli].setConta(valor);
 			vQuarto[num_quarto].setDisponibilidade();
 			return valor;
